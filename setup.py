@@ -13,5 +13,6 @@ setup(
         "numpy >= 1.13.3",
         "joypy >= 0.1.9",
         "matplotlib >= 2.1.2",
+        "requests >= 2.18.4",
     ],
 )

@@ -5,10 +5,6 @@ This is a little library (one function) to translate a lat-long box to a JoyPlot
 ## Installation 
 
 ```
-pip install geo-joyplot
-```
-or 
-```
 git clone https://github.com/pblankley/geo-joyplot
 cd geo-joyplot
 python setup.py install
@@ -21,13 +17,14 @@ After you install the library, you can use it as follows:
 import joypy
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
+import geo_joyplot
 
 GOOGLE_API = '<API-KEY>'
 top_left = (38.9439, -106.3746)
 bot_right = (38.8253, -106.1966)
 
 # Get the plotting pandas dataframe
-plot_df = get_elev(top_left, bot_right, api_key=GOOGLE_API, n_vert=50, n_horiz=100)
+plot_df = geo_joyplot.get_plot_df(top_left, bot_right, api_key=GOOGLE_API, n_vert=50, n_horiz=100)
 
 # Plot with the joypy library
 fig,ax = plt.subplots(figsize=(10,8))
@@ -42,7 +39,7 @@ Running this should result in the following image of the Sawatch range near Lead
 
 ----------------------------------------------------------------------------
 
-<p align="center"><img width="30%" src="assets/mtharvard.png" /></p>
+<p align="center"><img width="80%" src="assets/mtharvard.png" /></p>
 
 ----------------------------------------------------------------------------
 
