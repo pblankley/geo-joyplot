@@ -1,6 +1,6 @@
 # Geography to JoyPlot
 
-This is a little library (one function) to translate a lat-long box to a JoyPlot plot using the joypy[https://github.com/sbebo/joypy] library.
+This is a little library (one function) to translate a lat-long box to a JoyPlot plot using the [joypy](https://github.com/sbebo/joypy) library and the [Google Elevation API](https://developers.google.com/maps/documentation/elevation/start).
 
 ## Installation 
 
